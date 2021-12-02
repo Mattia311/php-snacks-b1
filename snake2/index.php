@@ -5,7 +5,8 @@ $name = $_GET['name'];
 $mail = $_GET['mail'];
 $age = $_GET['age'];
 
-var_dump($name . $mail . $age);
+// var_dump($name . $mail . $age);
+echo 'mui';
 
 if(strlen($name) >= 4 && strpos($mail,"@") && strpos($mail,".") && is_numeric($age)){
     $result ="Accesso riuscito";
@@ -27,14 +28,14 @@ if(strlen($name) >= 4 && strpos($mail,"@") && strpos($mail,".") && is_numeric($a
     <form action="./index.php" method= 'get'>
         <label for="name">name </label>
         <input type="text" name='name' id='name'>
-    </form>
-    <form action="./index.php" method= 'get'>
+
         <label for="mail">Email </label>
         <input type="text" name='mail' id='mail'>
-    </form>
-    <form action="./index.php" method= 'get'>
+
         <label for="age">age </label>
         <input type="text" name='age' id='age'>
+
+        <input type="submit" value="Invia" />
     </form>
     <h1><?php echo $result ?></h1>
     
