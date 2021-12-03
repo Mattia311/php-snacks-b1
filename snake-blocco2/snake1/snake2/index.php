@@ -14,8 +14,7 @@
 <body>
     <form action="./dati.php" method= 'get'>
         <label for="name">name </label>
-        <input type="text" name='name' id='name'>
-
+        <input type="text" name='invito' id='invito'>
         <input type="submit" value="Invia" />
     </form>
     
