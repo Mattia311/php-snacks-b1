@@ -1,0 +1,10 @@
+<?php
+/*Prendere un paragrafo abbastanza lungo, contenente diverse frasi. Prendere il paragrafo e suddividerlo in tanti paragrafi. Ogni punto un nuovo paragrafo.*/
+$paragraphs = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dignissimos vel necessitatibus esse debitis dolore corrupti, similique architecto provident ducimus a sint expedita rem ipsam quia, atque dolores perspiciatis quos maxime assumenda perferendis praesentium aliquid! Quae nostrum sed minus, blanditiis iure illo animi cum minima unde architecto exercitationem reprehenderit necessitatibus omnis accusantium, consequatur doloremque nesciunt laboriosam explicabo autem ducimus deserunt! Necessitatibus consequuntur, voluptatum aut reprehenderit amet error velit possimus debitis officia autem repellendus deserunt. Rem voluptate totam voluptatem ut nulla. Debitis velit incidunt iste blanditiis. Mollitia praesentium laudantium qui id, eos, commodi ipsum vero repudiandae voluptatem tenetur molestiae maxime sapiente aut excepturi saepe architecto exercitationem unde quia minima a quae ullam dolorem doloribus? Iusto inventore enim expedita, impedit error fuga vero deserunt. Facere autem sed animi consequuntur omnis, nemo mollitia dolore quibusdam molestias eius, soluta repellat nihil maxime distinctio qui assumenda. At sunt quo, atque repellat nihil ea nemo voluptates nam molestias necessitatibus sit, fugiat, eaque quos reiciendis ipsum odio minima qui. Ratione, corrupti rem non tempora aliquid ad totam impedit veritatis delectus, consequatur, expedita accusamus illum reprehenderit quidem ut numquam recusandae sapiente eligendi ducimus odit blanditiis error. Illum neque obcaecati quis reiciendis qui dignissimos totam nemo magnam amet eaque?";
+
+$paragraph = explode('.', $paragraphs);
+
+for ($i=0; $i < count($paragraph); $i++) { 
+    echo($paragraph[$i] . '<br>');
+}
+?>
