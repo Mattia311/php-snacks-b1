@@ -29,6 +29,9 @@ $ads = [
 
 ];
 
+    
+
+
 
 
 ?>
@@ -43,9 +46,15 @@ $ads = [
 </head>
 <body>
     <h1>Pubblicità</h1>
-    <?php foreach($ads as $ad) { ?>
-        <img src="<?php echo $ad['image_path']; ?>" alt="">
-    <?php } ?>
+    <?php
+     foreach($ads as $ad) { ?>
+        <?php if ($ad['is_active'] == 'true') { ?>
+            <img src="<?php echo $ad['image_path'] ; ?>" alt="">
+            
+        <?php } ?>
+        
+    <?php } ?> 
+    
     
 </body>
 </html>
